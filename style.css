@@ -11,7 +11,7 @@ body {
 
 header {
     width: 95%;
-    margin: auto; 
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,19 @@ nav {
     height: 10vh;
 }
 
-.navbar-item{
+.burger {
+    display: none;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background: #333;
+    transition: all 0.3s;
+}
+
+.navbar-item {
     font-size: 24px;
 }
 
@@ -63,7 +75,7 @@ nav {
     margin-top: 40px;
 }
 
-.hero img{
+.hero img {
     width: 93%;
     display: flex;
     border-radius: 30px;
@@ -128,7 +140,7 @@ nav {
     margin: auto;
 }
 
-.offer-high-demand h2{
+.offer-high-demand h2 {
     width: 20%;
     font-size: 36px;
     font-weight: 500;
@@ -158,7 +170,7 @@ nav {
     border-radius: 10px;
 }
 
-.grid-item-card:nth-child(2) .icon-container{
+.grid-item-card:nth-child(2) .icon-container {
     background: #27AE60;
 }
 
@@ -168,10 +180,10 @@ nav {
 
 .material-icons {
     font-size: 48px;
-    color: white;   
+    color: white;
 }
 
-.offer-high-demand h3{
+.offer-high-demand h3 {
     font-size: 24px;
     font-weight: 700;
     color: #333;
@@ -185,7 +197,7 @@ nav {
     margin-bottom: 20px;
 }
 
-.offer-high-demand button{
+.offer-high-demand button {
     background: #E0E0E0;
     font-size: 24px;
     font-weight: 500;
@@ -199,17 +211,18 @@ nav {
     cursor: pointer;
 }
 
-.offer-high-demand button.active{
+.offer-high-demand button.active {
     background: #2D9CDB;
     color: white;
 }
 
-.design, .team {
+.design,
+.team {
     width: 75%;
     margin: auto;
 }
 
-.design h2{
+.design h2 {
     width: 25%;
     font-size: 36px;
     font-weight: 500;
@@ -225,12 +238,12 @@ nav {
     margin-bottom: 20vh;
 }
 
-.design .grid-item img{
+.design .grid-item img {
     width: 100%;
     border-radius: 30px;
 }
 
-.design .job-title{
+.design .job-title {
     color: #828282;
     font-size: 14px;
     margin-top: 10px;
@@ -254,7 +267,7 @@ nav {
     cursor: pointer;
 }
 
-.team .grid{
+.team .grid {
     margin-top: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -272,20 +285,20 @@ nav {
     margin-bottom: 20px;
 }
 
-.team h2{
+.team h2 {
     font-size: 36px;
     font-weight: 500;
     width: 40%;
 }
 
-.team p{
+.team p {
     font-size: 16px;
     font-weight: 400;
     color: #4F4F4F;
     width: 40%;
 }
 
-.team .team-right{
+.team .team-right {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -321,7 +334,7 @@ nav {
     display: flex;
 }
 
-.testimony-profile img{
+.testimony-profile img {
     width: 120px;
     height: 120px;
     object-fit: cover;
@@ -329,13 +342,13 @@ nav {
     margin-right: 30px;
 }
 
-.testimony-profile-details{
+.testimony-profile-details {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.testimony .testimony-name{
+.testimony .testimony-name {
     font-size: 24px;
     font-weight: 500;
     width: 100%;
@@ -407,7 +420,7 @@ footer {
     margin-bottom: 5px;
 }
 
-.footer-contact input{
+.footer-contact input {
     width: 100%;
     padding: 10px 20px;
     border-radius: 12px;
@@ -433,69 +446,95 @@ footer {
     cursor: pointer;
 }
 
-@media (max-width: 1600px){
+@media (max-width: 1600px) {
     .hero .hero-header {
         width: 35%;
     }
-    .hero .hero-story{
+
+    .hero .hero-story {
         width: 28%;
     }
-    .hero-text{
+
+    .hero-text {
         width: 23%;
     }
-    .team h2{
+
+    .team h2 {
         width: 50%;
     }
-    .offer-high-demand h2{
+
+    .offer-high-demand h2 {
         width: 30%;
     }
-    .design h2{
+
+    .design h2 {
         width: 35%;
     }
-    .testimony p{
+
+    .testimony p {
         width: 75%;
     }
-    .footer-input-group{
+
+    .footer-input-group {
         width: 40%;
+    }
+    .hero-input-group{
+        width: 25%;
+    }
+    .btn-hero-submit {
+        right: 3px;
+        top: 3px;
+        height: 89%;
     }
 }
 
-@media (max-width: 1460px){
+@media (max-width: 1460px) {
     .hero .hero-header {
         width: 40%;
     }
-    .hero .hero-story{
+
+    .hero .hero-story {
         width: 30%;
     }
+
     .hero-text {
         width: 25%;
     }
-    .offer-high-demand h2{
+
+    .offer-high-demand h2 {
         width: 30%;
     }
+
     .team h2 {
         width: 55%;
     }
+
     .testimony p {
         font-size: 32px;
     }
-    .offer-high-demand .grid{
+
+    .offer-high-demand .grid {
         margin-bottom: 150px;
     }
-    .hero{
+
+    .hero {
         margin-bottom: 120px;
     }
-    .team .grid{
+
+    .team .grid {
         margin-top: 150px;
         margin-bottom: 180px
     }
-    .footer-input-group{
+
+    .footer-input-group {
         width: 50%;
     }
-    .btn-footer-submit{
+
+    .btn-footer-submit {
         right: 4px;
         height: 88%;
     }
+
     .footer-grid {
         height: fit-content;
     }
@@ -505,156 +544,242 @@ footer {
     .offer-high-demand h2 {
         width: 35%;
     }
+
     .hero-text {
         width: 28%;
     }
-    .design h2{
+
+    .design h2 {
         width: 40%;
     }
-    .team h2{
+
+    .team h2 {
         width: 60%;
     }
+
     .testimony p {
         width: 80%;
+    }
+    .hero-input-group{
+        width: 30%;
     }
 }
 
 @media (max-width: 1280px) {
-    .hero h2{
+    .hero h2 {
         font-size: 40px;
     }
-    .team h2{
+
+    .team h2 {
         font-size: 35px;
     }
+
     .testimony p {
         font-size: 31px;
     }
 }
 
 @media (max-width: 480px) {
-    header{
+    header {
         padding: 20px;
     }
+
     nav {
         display: none;
     }
-    .hero{
+
+    .navbar{
+        transition: all 0.3s;
+    }
+
+    .navbar.active {
+        z-index: 3;
+        position: absolute;
+        background: #e2e2e2;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navbar.active .navbar-item {
+        margin-bottom: 20px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger.active{
+        z-index: 4;
+        color: black;
+    }
+
+    .burger.active .line-1 {
+        transform: rotate(45deg);
+    }
+
+    .burger.active .line-2 {
+        opacity: 0;
+    }
+
+    .burger.active .line-3 {
+        transform: translateY(-16px) rotate(315deg);
+    }
+
+    .hero {
         /* margin-bottom: 50px; */
     }
-    .hero h2{
+
+    .hero h2 {
         font-size: 24px;
         width: 70%;
     }
-    .offer-high-demand .grid{
+
+    .offer-high-demand .grid {
         grid-template-columns: 1fr;
     }
+
     .hero .intro {
         margin-left: 10%;
     }
+
     .hero .hero-header {
         margin-left: 10%;
         width: 70%;
         margin-bottom: unset;
     }
-    .hero .hero-story{
+
+    .hero .hero-story {
         margin-left: 10%;
         width: 50%;
         margin-top: unset;
     }
+
     .hero img {
         width: 90%;
         border-radius: 15px;
         height: 25vh;
         object-fit: cover;
     }
-    .hero-text{
+
+    .hero-text {
         font-size: 12px;
         margin-left: 10%;
         margin-top: 10px;
         margin-bottom: 20px;
         width: 70%;
     }
+
     .hero-contact {
         margin-left: 10%;
     }
-    .hero-input-group{
+
+    .hero-input-group {
         width: 80%;
     }
-    .btn-hero-submit{
+
+    .btn-hero-submit {
         height: 85%;
     }
-    .offer-high-demand h2{
+
+    .offer-high-demand h2 {
         font-size: 24px;
         width: 70%;
         margin-bottom: 120px;
     }
-    .offer-high-demand{
+
+    .offer-high-demand {
         width: 80%;
     }
-    .offer-high-demand .grid{
+
+    .offer-high-demand .grid {
         row-gap: 40px;
     }
-    .design h2{
+
+    .design h2 {
         font-size: 24px;
         width: 80%;
     }
-    .design, .team{
+
+    .design,
+    .team {
         width: 80%;
     }
-    .design .grid{
+
+    .design .grid {
         grid-template-columns: 1fr;
         row-gap: 40px;
         margin-bottom: 50px;
     }
-    .design .grid-item:nth-child(odd){
+
+    .design .grid-item:nth-child(odd) {
         transform: translateY(0);
     }
-    .see-more{
+
+    .see-more {
         text-align: left;
     }
-    .team .grid{
+
+    .team .grid {
         grid-template-columns: 1fr;
         row-gap: 20px;
         margin-bottom: 50px;
     }
-    .team p{
+
+    .team p {
         width: 80%;
         margin-bottom: 10px;
     }
-    .team h2{
+
+    .team h2 {
         width: 90%;
         margin-bottom: 15px;
     }
-    .team .team-header{
+
+    .team .team-header {
         margin-bottom: 10px;
     }
-    .testimony p{
+
+    .testimony p {
         font-size: 24px;
         width: 100%;
     }
-    .testimony-profile img{
+
+    .testimony-profile img {
         width: 100px;
         height: 100px;
     }
-    .testimony .testimony-name{
+
+    .testimony .testimony-name {
         font-size: 20px;
     }
-    .testimony .testimony-job{
+
+    .testimony .testimony-job {
         font-size: 15px;
     }
-    .testimony{
+
+    .testimony {
         margin-bottom: 50px;
     }
-    .footer-grid{
+
+    .footer-grid {
         grid-template-columns: 1fr;
     }
-    .footer-navigation{
+
+    .footer-navigation {
         margin-bottom: 50px;
     }
-    .footer-social{
+
+    .footer-social {
         margin-bottom: 50px;
     }
-    .footer-input-group{
+
+    .footer-input-group {
         width: 100%;
     }
 }
