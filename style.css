@@ -251,6 +251,7 @@ nav {
     color: #2D9CDB;
     font-size: 24px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .team .grid{
@@ -527,5 +528,133 @@ footer {
     }
     .testimony p {
         font-size: 31px;
+    }
+}
+
+@media (max-width: 480px) {
+    header{
+        padding: 20px;
+    }
+    nav {
+        display: none;
+    }
+    .hero{
+        /* margin-bottom: 50px; */
+    }
+    .hero h2{
+        font-size: 24px;
+        width: 70%;
+    }
+    .offer-high-demand .grid{
+        grid-template-columns: 1fr;
+    }
+    .hero .intro {
+        margin-left: 10%;
+    }
+    .hero .hero-header {
+        margin-left: 10%;
+        width: 70%;
+        margin-bottom: unset;
+    }
+    .hero .hero-story{
+        margin-left: 10%;
+        width: 50%;
+        margin-top: unset;
+    }
+    .hero img {
+        width: 90%;
+        border-radius: 15px;
+        height: 25vh;
+        object-fit: cover;
+    }
+    .hero-text{
+        font-size: 12px;
+        margin-left: 10%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 70%;
+    }
+    .hero-contact {
+        margin-left: 10%;
+    }
+    .hero-input-group{
+        width: 80%;
+    }
+    .btn-hero-submit{
+        height: 85%;
+    }
+    .offer-high-demand h2{
+        font-size: 24px;
+        width: 70%;
+        margin-bottom: 120px;
+    }
+    .offer-high-demand{
+        width: 80%;
+    }
+    .offer-high-demand .grid{
+        row-gap: 40px;
+    }
+    .design h2{
+        font-size: 24px;
+        width: 80%;
+    }
+    .design, .team{
+        width: 80%;
+    }
+    .design .grid{
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+        margin-bottom: 50px;
+    }
+    .design .grid-item:nth-child(odd){
+        transform: translateY(0);
+    }
+    .see-more{
+        text-align: left;
+    }
+    .team .grid{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        margin-bottom: 50px;
+    }
+    .team p{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .team h2{
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    .team .team-header{
+        margin-bottom: 10px;
+    }
+    .testimony p{
+        font-size: 24px;
+        width: 100%;
+    }
+    .testimony-profile img{
+        width: 100px;
+        height: 100px;
+    }
+    .testimony .testimony-name{
+        font-size: 20px;
+    }
+    .testimony .testimony-job{
+        font-size: 15px;
+    }
+    .testimony{
+        margin-bottom: 50px;
+    }
+    .footer-grid{
+        grid-template-columns: 1fr;
+    }
+    .footer-navigation{
+        margin-bottom: 50px;
+    }
+    .footer-social{
+        margin-bottom: 50px;
+    }
+    .footer-input-group{
+        width: 100%;
     }
 }
